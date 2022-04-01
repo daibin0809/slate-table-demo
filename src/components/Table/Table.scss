@@ -1,0 +1,43 @@
+.yt-e-table-wrap {
+  position: relative;
+
+  table,
+  th,
+  td {
+    border: 1px solid #d9d9d9;
+  }
+
+  table {
+    width: 100%;
+    table-layout: fixed;
+    border-collapse: collapse;
+  }
+
+  td {
+    min-width: 20px;
+    min-height: 20px;
+    padding: 4px 8px;
+    overflow: hidden;
+    word-break: break-all;
+    overflow-wrap: break-word;
+  }
+
+  .yt-e-table-row {
+    height: 45px;
+  }
+
+  .ye-e-table-selected tr ::selection {
+    color: inherit;
+    background: none;
+  }
+
+  .yt-e-table-selection {
+    position: absolute;
+    z-index: 1;
+    box-sizing: border-box;
+    background: rgb(0 106 254 / 12%);
+    border: 1px solid rgb(0 106 254);
+    outline-offset: -2px;
+    pointer-events: none;
+  }
+}
